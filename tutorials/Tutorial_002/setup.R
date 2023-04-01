@@ -34,8 +34,10 @@ set_up <- function(project_dir) {
   )
   
   for (pkg in packages_cran) {
-	if  (!require(pkg , character.only = TRUE )) {
-	  install.packages(packages_cran)
+	if  (!require(pkg, character.only=TRUE)) {
+	  install.packages(pkg, quite=TRUE)
+	} else {
+	  detach(paste0('package:', pkg), character.only=TRUE)
 	}
   }
   BiocManager::install(packages_bioconductor, update=FALSE, ask=FALSE)
