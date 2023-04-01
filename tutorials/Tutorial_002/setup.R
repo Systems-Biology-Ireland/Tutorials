@@ -52,7 +52,7 @@ set_up <- function(project_dir) {
   
   # download annotation file from GitHub
   curl::curl_download(
-    'https://raw.githubusercontent.com/PhilippJunk/SBI_Tutorials/main/tutorials/Tutorial_002/data/annotation.csv',
+    'https://raw.githubusercontent.com/PhilippJunk/SBI_Tutorials/main/tutorials/Tutorial_002/annotation.csv',
     'data/annotation.csv'
   )
    
