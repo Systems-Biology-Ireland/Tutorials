@@ -33,7 +33,11 @@ set_up <- function(project_dir) {
     'pcaMethods'
   )
   
-  install.packages(packages_cran)
+  for (pkg in packages_cran) {
+	if  (!require(pkg , character.only = TRUE )) {
+	  install.packages(packages_cran)
+	}
+  }
   BiocManager::install(packages_bioconductor, update=FALSE, ask=FALSE)
   
   
