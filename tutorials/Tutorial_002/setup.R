@@ -58,13 +58,13 @@ set_up <- function(project_dir) {
   
   # download annotation file from GitHub
   curl::curl_download(
-    'https://raw.githubusercontent.com/PhilippJunk/SBI_Tutorials/main/tutorials/Tutorial_002/annotation.csv',
+    'https://raw.githubusercontent.com/Systems-Biology-Ireland/Tutorials/main/tutorials/Tutorial_002/annotation.csv',
     'data/annotation.csv'
   )
    
   # download main analysis script from GitHub
   curl::curl_download(
-    'https://raw.githubusercontent.com/PhilippJunk/SBI_Tutorials/main/tutorials/Tutorial_002/proteomics_analysis.R',
+    'https://raw.githubusercontent.com/Systems-Biology-Ireland/Tutorials/main/tutorials/Tutorial_002/proteomics_analysis.R',
     'proteomics_analysis.R'
   )
   
