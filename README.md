@@ -7,7 +7,8 @@ The tutorials are meant as an introduction to programming languages, protocols a
 | Tutorial | Title | Author | Date |
 | -------- | ----- | ------ | ---- |
 | [001] | Introduction to R programming | Luis Iglesias Martinez | 2023-02-23 |
-
+| [002] | Proteomics analysis in R | Philipp Junk | 2023-03-30 |
 
 
 [001]: https://github.com/Systems-Biology-Ireland/Tutorials/tree/main/tutorials/Tutorial_001
+[002]: https://github.com/Systems-Biology-Ireland/Tutorials/tree/main/tutorials/Tutorial_002
