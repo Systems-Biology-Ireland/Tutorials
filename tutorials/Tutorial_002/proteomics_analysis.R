@@ -5,10 +5,10 @@ tutorial_dir <- 'D:/Daten/Work/Dublin/CloudStation/other/2023-03-30_RSeminarProt
 # source(setup.R)
 # set_up(tutorial_dir)
 
+library(tidyverse)
 script_dir <- str_glue('{tutorial_dir}/analysis_scripts/')
 setwd(tutorial_dir)
 
-library(tidyverse)
 # import analysis functions
 list.files(script_dir, '*.R', full.names = T) %>%
   map(function(x) {
@@ -18,7 +18,8 @@ list.files(script_dir, '*.R', full.names = T) %>%
 ###############################################################################
 # IMPORT DATA
 
-annotation <- read.table('data/annotation.csv', header=T, sep=';') %>%
+annotation <- read.table('data/annotation.csv', header=T, sep=';',
+						 fileEncoding='UTF-8-BOM') %>%
   mutate(label_new = str_c(group, biol_repl, tech_repl, sep='__'))
 
 # parses output from MaxQuant
