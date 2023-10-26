@@ -16,9 +16,8 @@ maintainers = [
 classifiers = [
   "Programming Language :: Python",
 ]
-version = "0.0.1"
 
-# dynamic = ["version"]
+dynamic = ["version"]
 
 dependencies = [
   "numpy >= 1.24",
@@ -26,3 +25,6 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 exclude = [".tox*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "cool_analysis.__version__"}
