@@ -20,5 +20,9 @@ version = "0.0.1"
 
 # dynamic = ["version"]
 
+dependencies = [
+  "numpy >= 1.24",
+]
+
 [tool.setuptools.packages.find]
 exclude = [".tox*"]
